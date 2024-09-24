@@ -5,11 +5,13 @@ public class ChatBot {
     // instance variables
     private String name;
     private int number;
+    private int age;
  
     // constructor
-    public ChatBot(String chatBotName, int faveNum) {
+    public ChatBot(String chatBotName, int faveNum, int chatBotAge) {
         name = chatBotName;
         number = faveNum;
+        age = chatBotAge;
     }
  
     // void method that prints a greeting
@@ -50,13 +52,30 @@ public class ChatBot {
 
     // Cherine's Methods
 
-    // method that returns double the users age
-    public int doubleAge(int age) {
+    // method that returns double the robots age
+    public int doubleAge() {
         return age * 2;
     }
 
     // method that returns robots favorite hobby
-    public String favoriteHobby() {
-        return "My favorite hobby is chatting with other people!";
+    public String favHobby(String hobby) {
+        return "Wow, " + hobby + " is cool! My favorite hobby is chatting with other people!";
+    }
+
+    public void ageOfRobot(int userAge) {
+        System.out.println(userAge + " years is a lot of days. I am only " + age + " day(s) old.");
+    }
+    
+    // Evelyn's Methods
+    public int num4() {
+        return 5 + age;
+    }
+
+    public String favColor(String color) {
+        return "My favorite color is also " + color;
+    }
+
+    public void favNum2 (int num2){
+        System.out.println ("My second favorite number is " + (num2 + age));
     }
 }
